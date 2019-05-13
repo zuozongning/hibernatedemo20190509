@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.oaec.hibernatedemo.entity">
+    <class name="Student" table="t_student">
+        <id name="stuNo" type="string" column="stu_no" length="20"/>
+        <property name="name" type="string" column="name" length="15"/>
+        <property name="sex" type="string" column="sex" length="3"/>
+        <property name="birthday" type="timestamp" column="birthday"/>
+    </class>
+</hibernate-mapping>

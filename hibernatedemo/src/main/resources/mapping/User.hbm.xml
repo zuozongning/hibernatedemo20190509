@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.oaec.hibernatedemo.entity">
+    <class name="User" table="T_USER">
+        <id name="id" type="int">
+            <column name="Id"/>
+            <generator class="native"/>
+        </id>
+        <property name="username" type="string" column="USERNAME"/>
+        <property name="password" type="string" column="PASSWORD"/>
+        <property name="sex" type="string" column="SEX"/>
+    </class>
+</hibernate-mapping>
